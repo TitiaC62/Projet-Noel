@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const data = params.get('data');
 
     if (data) {
-        let prenom = "Bienvenue " + decodeURIComponent(data);
+        let prenom = "Bonjour " + decodeURIComponent(data);
         let prenomElement = document.getElementById('prenom');
         prenomElement.textContent = prenom;
     } else {

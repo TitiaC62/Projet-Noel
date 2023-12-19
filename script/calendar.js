@@ -1,4 +1,14 @@
-import quotes from "./quotes.js"
+if(i % 2 == 1) {
+    
+}
+
+if(i % 2 == 0) {
+    
+}
+
+
+
+
 
 const boxes = document.querySelectorAll(".js-box")
 const today = new Date(Date.now())
