@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+}
+
+header{
+    background-color:#c8c7f065;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+li{
+    list-style: none;
+    display: inline;
+    padding: 25px;
+    color: white;
+    font-weight: bold;
+    
+}
+
+
+.entrer{
+    width: 100vw;
+    margin-top: 10vh;
+}
+
+.button--entrer{
+    border-radius: 50%;
+    padding: 40px;
+    background-color: rgb(198, 32, 32);
+    height: 150px;
+    width: 150px;
+    color: white;
+   
+}
+
+
+.grid-button{
+    display: grid;
+    align-items: center;
+    grid-column: 2/3;
+    margin: 0 auto;
+}
+
+.text-entrer{
+    text-align: center;
+    font-size: xx-large;
+    color: red;
+    margin-top: 50vh; 
+    
+}
+
+#prenom{
+    color: red
+}
