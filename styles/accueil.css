@@ -1,27 +1,4 @@
 
-.entrer{
-    width: 100vw;
-    margin-top: 10vh;
-}
-
-.button--entrer{
-    border-radius: 50%;
-    padding: 40px;
-    background-color: rgb(198, 32, 32);
-    height: 150px;
-    width: 150px;
-    color: white;
-   
-}
-
-
-.grid-button{
-    display: grid;
-    align-items: center;
-    grid-column: 2/3;
-    margin: 0 auto;
-}
-
 .text-entrer{
     text-align: center;
     font-size: xx-large;
@@ -32,4 +9,21 @@
 
 #prenom{
     color: red
+}
+
+h1{
+    text-align: center;
+    padding: 1rem;
+}
+
+.santa{
+    position: relative;
+}
+
+img{
+    height: 50vh;
+    position: fixed;
+    bottom: 0;
+    right: 1em;
+    
 }
