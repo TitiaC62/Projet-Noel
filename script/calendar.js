@@ -1,13 +1,29 @@
-if(i % 2 == 1) {
+const adventNumber = document.querySelectorAll(".advent__number")
+
+adventNumber.forEach((number) => {
+    const num = parseInt(number.textContent);
     
-}
+    if (num % 2 === 0) {
+        number.style.backgroundColor = "red";
+    } else {
+        number.style.backgroundColor = "green";
+    }
 
-if(i % 2 == 0) {
-    
-}
+    adventNumber.forEach((number) => {
+        number.addEventListener("mouseover", () =>{
+            const num = parseInt(number.textContent)
+            if( num % 2 == 1) {
+            number.style.backgroundColor = "red"
+            }
+            else{
+            number.style.backgroundColor = "green"
+            }
+        
+            })
 
+    })
 
-
+})
 
 
 const boxes = document.querySelectorAll(".js-box")
@@ -17,17 +33,29 @@ const dateNumber = today.getDate()
 boxes.forEach (box => {
     box.addEventListener('click', () => {
         const boxNumber = parseInt(box.textContent)
+        
         if (boxNumber <= dateNumber){
-            playSong()
-            showImage(box)
+            box.style.backgroundColor = "blue"
+           playSong()
+           // showImage(box)
             openModal(boxNumber)
 
             timeoutId = setTimeout(() => {
                 stopSong()
-            }, 4000)
+            }, 2500)
         }
+        
     })
 })
+
+ const url = "./assets/mp3/music.mp3"
+ const song = new Audio(url)
+
+const playSong = () => {
+    song.pause()
+    song.currentTime = 0
+    song.play()   
+}
 
 const stopSong = () => {
     song.pause()
@@ -35,28 +63,17 @@ const stopSong = () => {
     clearTimeout(timeoutId) // Effacer le délai si la musique est arrêtée avant la fin du délai
 }
 
- const url = "assets/audios/opening-song.mp3"
- const song = new Audio(url)
-
-const playSong = () => {
-    song.pause()
-    song.currentTime = 0
-    song.play()
-    
-    
-}
-
-const showImage = (boxToHide) => {
-    boxToHide.classList.add("hide")
-}
-
 const modal = document.querySelector(".js-modal")
-const quote = document.querySelector(".js-quote")
-const author = document.querySelector(".js-author")
-
 
 const openModal = (index) => {
-    quote.textContent = quotes[index].quote
-    author.textContent = quotes[index].author
+    modal.style.display = 'block'
     modal.showModal()
 }
+
+const closeModal = document.querySelector('.modal__button')
+
+closeModal.addEventListener('click', () =>{
+    modal.style.display = 'none'
+    stopSong()
+
+})

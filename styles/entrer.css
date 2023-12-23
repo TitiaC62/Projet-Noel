@@ -21,3 +21,12 @@
     grid-column: 2/3;
     margin: 0 auto;
 }
+
+
+.text-entrer{
+    text-align: center;
+    font-size: xx-large;
+    color: red;
+    margin-top: 50vh; 
+    
+}

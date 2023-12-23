@@ -1,12 +1,4 @@
 
-.text-entrer{
-    text-align: center;
-    font-size: xx-large;
-    color: red;
-    margin-top: 50vh; 
-    
-}
-
 #prenom{
     color: red
 }
@@ -14,11 +6,15 @@
 h1{
     text-align: center;
     padding: 1rem;
+    font-size: 70px;
+    
 }
 
 .santa{
     position: relative;
 }
+
+
 
 img{
     height: 50vh;
@@ -26,4 +22,12 @@ img{
     bottom: 0;
     right: 1em;
     
+}
+
+#txt-welcom{
+    font-family: Mountains of Christmas;
+    font-size: 50px;
+    text-align: center;
+    color: green;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em red;
 }

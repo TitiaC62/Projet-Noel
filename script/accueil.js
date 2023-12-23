@@ -2,9 +2,9 @@
 
 const container = document.getElementById('txt-welcom')
 
-const text = 'Bienvenu Dans la maison du Père Noël'
+const text = 'Bienvenu dans la maison du Père Noël'
 const limit = text.length
-const interval = 200
+const interval = 50
 let index = 0
 
 
@@ -16,3 +16,4 @@ const idInterval = setInterval(function(){
         clearInterval(idInterval)
     }
 }, interval)
+
