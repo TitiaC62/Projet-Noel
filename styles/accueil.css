@@ -31,3 +31,27 @@ img{
     color: green;
     text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em red;
 }
+
+.countdown_style{
+    font-size: xx-large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    color: white;
+    margin: auto;
+    position: fixed;
+    left: 23rem;
+    bottom: 5rem;
+}
+
+.blink {
+    font-family: Mountains of Christmas ;
+    font-size: 50px;
+    left: 27rem;
+    bottom: 1rem;
+    position: fixed;
+    animation: blink 1s infinite;
+  }
+  @keyframes blink { 
+    0% { color: red;}
+    50% {  color: green; } 
+    100% {  color: red; }
+  }
