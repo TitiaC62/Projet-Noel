@@ -30,7 +30,31 @@ header{
     padding: 10px;
 }
 
+.modal{
+    background-image: url("../assets/images/background/christmas-6772644_1280.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50%;
+    height: 50%;
+    display: none;
+   
+    border-radius: 5%; 
+  
+}
 
+button{
+   background: none; 
+   float: inline-end;
+   border: none;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+  color: red;
+}
 
 @media (min-width: 450px) {
     .advent{
@@ -60,31 +84,7 @@ header{
 
 
 
-.modal{
-    background-image: url("../assets/images/background/christmas-6772644_1280.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 50%;
-    height: 50%;
-    display: none;
-    margin: auto;
-    border-radius: 5%; 
-  
-}
 
-button{
-   background: none; 
-   float: inline-end;
-   border: none;
-}
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24;
-  color: red;
-}
 
     
 
