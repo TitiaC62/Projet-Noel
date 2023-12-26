@@ -6,7 +6,7 @@
 h1{
   text-align: center;
   padding: 1rem;
-  font-size: 40px;
+  font-size: small;
   
 }
 
@@ -63,7 +63,7 @@ button{
 
 #txt-welcom{
   font-family: Mountains of Christmas;
-  font-size: 50px;
+  font-size: small;
   text-align: center;
   color: red;
   text-shadow: 1px 1px 2px green, 0 0 1em blue, 0 0 0.2em green;
