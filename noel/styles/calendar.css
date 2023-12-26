@@ -1,3 +1,4 @@
+
 header{
     background-color:#d6d6ec65;
     height: 100px;
@@ -8,23 +9,54 @@ header{
 }
 
 .advent{
-    height: 50vh;
-    width: 50vw;
+    height: 10vh;
+    width: 10vw;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
-    justify-items: center;
-    margin: auto;
-
+   margin-top: 10px;
+   
 }
 
 .advent__number{
+    height: 50px;
+    width: 50px;
+    border-radius: 50% ;
+    font-size: rem;
+  
+}
+
+.advent__box{
+    padding: 10px;
+}
+
+
+
+@media (min-width: 450px) {
+    .advent{
+        height: 50vh;
+        width: 50vw;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 1rem;
+        justify-items: center;
+        margin: auto;
+
+    }
+
+    .advent__number{
         height: 100px;
         width: 100px;
         border-radius: 50% ;
         font-size: 3rem;
       
+    }
+
 }
+
+
+
+
 
 
 
