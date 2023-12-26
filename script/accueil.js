@@ -1,5 +1,5 @@
 
-
+//texte qui défile
 const container = document.getElementById('txt-welcom')
 
 const text = 'Bienvenu dans la maison du Père Noël'
@@ -7,9 +7,7 @@ const limit = text.length
 const interval = 50
 let index = 0
 
-
 const idInterval = setInterval(function(){
-    console.log(index)
     if(index <= limit){
         container.innerText = text.slice(0, index++)
     } else {
@@ -17,9 +15,22 @@ const idInterval = setInterval(function(){
     }
 }, interval)
 
+//Book : renvoi vers la video de l'histoire de Noël
+ const book = document.querySelector(".book")
 
+ document.querySelector('.video_click').addEventListener('click', function() {
+    document.querySelector('.video').style.display = 'block';
+  });
 
-// Fonction pour mettre à jour le décompte
+  const modal = document.querySelector(".js-modal")
+  const closeModal = document.querySelector('.modal__button')
+
+closeModal.addEventListener('click', () =>{
+    modal.style.display = 'none'
+
+})
+
+//Décompte
 function updateCountdown() {
     const currentDate = new Date();
     const christmasDate = new Date(currentDate.getFullYear(), 11, 25); // 25 décembre
@@ -32,29 +43,44 @@ function updateCountdown() {
     if (timeDiff > 0) {
         const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
 
-        if (days === 1) {
-            // Afficher "Joyeux Noël" lorsque le décompte est à J-1
+        if (days === 0) {
             const countdownElement = document.getElementById('countdown');
-            countdownElement.innerHTML = "Joyeux Noël !";
+            countdownElement.innerHTML = "C'est le grand jour !"
+            const meryChristmasElement = document.getElementById('merryChristmas');
+            meryChristmasElement.innerHTML = "Joyeux Noël !";
             return;
         }
     }
     
-    // Calcul des jours, heures, minutes et secondes restants
+
     const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
     const hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
-    
-
-    // Affichage du décompte dans l'élément avec l'ID "countdown"
+      
     const countdownElement = document.getElementById('countdown');
-    countdownElement.innerHTML = ` ${days} J ${hours}H ${minutes}Min ${seconds} s avant Noël !`;
+    countdownElement.innerHTML = `Plus que ${days}J ${hours}H ${minutes}Min  avant Noël !`;
 }
 
-// Mettre à jour le décompte initialement
-updateCountdown();
 
-// Mettre à jour le décompte chaque seconde
+updateCountdown();
 setInterval(updateCountdown, 1000);
 
+
+//Son Pere Noel
+
+const url = "./assets/mp3/pere_noel.mp3"
+const song = new Audio(url)
+
+const playSong = () => {
+   song.pause()
+   song.currentTime = 0
+   song.play()   
+}
+
+const santa = document.querySelector('.santa')
+    santa.addEventListener('mouseover', () => {
+           playSong()
+           timeoutId = setTimeout(() => {
+                stopSong()
+            }, 2500)
+        })

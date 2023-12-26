@@ -10,13 +10,61 @@ h1{
     
 }
 
-.santa{
-    position: relative;
+.book{
+    height: 5rem;
+    margin-left: 15rem;
+    margin-top: -2rem;
+    position: absolute;
+}
+
+.book:hover{
+    animation-name: rotate;
+    animation-duration: 0.7s;
+    animation-direction: reverse;
+}
+
+@keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+    50%{
+        transform: rotate(60deg);
+    }
+    100% {
+      transform: rotate(-60deg);
+    }
+  }
+
+.video{
+    display: none;
+    
 }
 
 
+.modal{
+    display: none;
+    margin: auto;
+    
+}
 
-img{
+button{
+   background: none; 
+   float: inline-end;
+   border: none;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+  color: red;
+}
+
+    
+
+.santa{
     height: 50vh;
     position: fixed;
     bottom: 0;

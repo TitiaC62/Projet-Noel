@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300&family=Mountains+of+Christmas:wght@700&family=Nabla&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <title>Maison du Père Noël</title>
 </head>
@@ -25,21 +26,37 @@
     <h1>
         <p id="prenom"> </p>
     </h1>
+
+    <div id="txt-welcom">   
+    </div>
+    
+    
+    <div class="video_click">
+        <img src="./assets/images/accueil/book-307513_640.png" class="book" alt="book">
+    </div>
    
-    <section class="santa">
-         <div id="txt-welcom">   
-        </div>
+    <dialog class="video modal js-modal" >
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/7gtjgnRS_Ts?si=9SXhxLQWLKcin4mV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-        <div id="countdown" class="countdown_style"  ></div>
-        <div id="merryChristmas" class="blink">
-                    Joyeux Noël !
-        </div>
+            <form method="dialog">
+                <button class="modal__button" type="submit">
+                    <span class="material-symbols-outlined">
+                        cancel
+                    </span> 
+                </button>
+            </form>
+    </dialog>
 
-        <div>
-            <img src="./assets/images/accueil/santa-claus-2991653_1280.png" alt="santa">
-        </div>
 
-    </section>
+   
+    <div id="countdown" class="countdown_style"  ></div>
+    <div id="merryChristmas" class="blink"></div>                  
+            
+    <div>
+        <img src="./assets/images/accueil/santa-claus-2991653_1280.png" class="santa" alt="santa">
+    </div>
+
+   
    
    
     
