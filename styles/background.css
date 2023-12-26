@@ -1,4 +1,42 @@
+@media (max-width: 449px) {
 
+
+.background--entrer{
+    background: url("../assets/images/background/background-entrer-mobile.jpg")
+}
+
+.background--accueil{
+    background: url("../assets/images/background/background-accueil-mobile.jpg");
+     background-size: 100% ;
+     
+}
+
+.background--calendrier{
+    background: url("../assets/images/background//background-calendar-mobile.png");
+}
+
+.background--lutins{
+    background: url("../assets/images/background/background-lutins-mobile.jpg")
+}
+}
+
+
+
+/* Mobil */
+
+
+
+@media (min-width :450px) {
+    .background--accueil,
+    .background--calendrier, 
+    .background--entrer,
+    .background--lutins
+    {
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+/* Desktop */
 .background--entrer{
     background: url("../assets/images/background/entrer.jpg");
 }
@@ -14,17 +52,6 @@
 
 .background--lutins{
     background: url("../assets/images/background/background-lutins.jpg")
-    
-    
-    
 }
 
-.background--accueil,
-.background--calendrier, 
-.background--entrer,
-.background--lutins
-{
-    background-repeat: no-repeat;
-    background-size: 100%;
 }
-
