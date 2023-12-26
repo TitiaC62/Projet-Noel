@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./styles/background.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/accueil.css">
+    
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300&family=Mountains+of+Christmas:wght@700&family=Nabla&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <title>Maison du Père Noël</title>
+</head>
+<body class="background--accueil">
+    <header>
+        <li><a href="accueil.html">Accueil </a></li>
+        <li><a href="calendrier.html">Calendrier de l'Avent</a></li>
+        <li><a href="lutins.html">Les lutins </a></li>
+    </header>
+
+    <h1>
+        <p id="prenom"> </p>
+    </h1>
+
+    <div id="txt-welcom">   
+    </div>
+    
+    
+    <div class="video_click">
+        <img src="./assets/images/accueil/book-307513_640.png" class="book" alt="book">
+    </div>
+   
+    <dialog class="video modal js-modal" >
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/7gtjgnRS_Ts?si=9SXhxLQWLKcin4mV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+            <form method="dialog">
+                <button class="modal__button" type="submit">
+                    <span class="material-symbols-outlined">
+                        cancel
+                    </span> 
+                </button>
+            </form>
+    </dialog>
+
+
+   
+    <div id="countdown" class="countdown_style"  ></div>
+    <div id="merryChristmas" class="blink"></div>                  
+            
+    <div>
+        <img src="./assets/images/accueil/santa-claus-2991653_1280.png" class="santa" alt="santa">
+    </div>
+
+   
+   
+   
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./script/accueil.js"></script>
+    <script src="./script/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+
+.entrer{
+    width: 100vw;
+    margin-top: 10vh;
+}
+
+.button--entrer{
+    border-radius: 50%;
+    padding: 40px;
+    background-color: rgb(198, 32, 32);
+    height: 150px;
+    width: 150px;
+    color: white;
+   
+}
+
+
+.grid-button{
+    display: grid;
+    align-items: center;
+    grid-column: 2/3;
+    margin: 0 auto;
+}
+
+
+.text-entrer{
+    text-align: center;
+    font-size: xx-large;
+    color: red;
+    margin-top: 50vh; 
+    
+}

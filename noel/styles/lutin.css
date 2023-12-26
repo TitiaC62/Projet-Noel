@@ -1,0 +1,12 @@
+.lutin--image{
+    position: relative;
+}
+
+img{
+    display: flex;
+    height: 50vh;
+    justify-content: space-around;
+    bottom: 0;
+    position: fixed;
+}
+
